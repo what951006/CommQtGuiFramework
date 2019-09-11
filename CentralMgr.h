@@ -2,6 +2,7 @@
 #include "QSingleApplication.h"
 #include "NetworkMgr.h"
 #include "UIMgr.h"
+#include "AppDataMgr.h"
 
 class CentralMgr : public QSingleApplication
 {
@@ -14,17 +15,19 @@ public:
 
 protected:
 	/*UI模块*/
-	void initUI();
+	void initUIMgr();
 	/*网络模块*/
-	void initNetwork();
+	void initNetworkMgr();
 	/*多线程任务模块*/
-	void initThreadTask();
-
+	void initThreadTaskMgr();
+	/*初始化程序数据模块*/
+	void initAppDataMgr();
 	/*最后初始化*/
 	void onAfterInit();
 private:
 
 	NetworkMgr network_mgr_;
 	UIMgr ui_mgr_;
+	AppDataMgr data_mgr_;
 };
 

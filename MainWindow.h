@@ -10,6 +10,13 @@ class MainWindow : public QMainWindow
 public:
 	MainWindow(QWidget *parent = Q_NULLPTR);
 
+protected:
+	//创建窗口等等，放于MainWindow的构造函数中
+	//void create...Window();
+
+	/*创建脚本窗口*/
+	void createScriptWindow();
+
 private:
 	Ui::MainWindowClass ui;
 };

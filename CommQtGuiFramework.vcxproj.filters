@@ -52,9 +52,21 @@
     <ClCompile Include="ThreadTaskMgr.cpp">
       <Filter>FileTree</Filter>
     </ClCompile>
+    <ClCompile Include="CommDockWidget.cpp">
+      <Filter>FileTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DSConvertMgr.cpp">
+      <Filter>FileTree</Filter>
+    </ClCompile>
+    <ClCompile Include="AppDataMgr.cpp">
+      <Filter>FileTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CommDockWidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -82,5 +94,22 @@
     <QtMoc Include="ThreadTaskMgr.h">
       <Filter>FileTree</Filter>
     </QtMoc>
+    <QtMoc Include="CommDockWidget.h">
+      <Filter>FileTree</Filter>
+    </QtMoc>
+    <QtMoc Include="AppDataMgr.h">
+      <Filter>FileTree</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DSConvertMgr.h">
+      <Filter>FileTree</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralDef.h">
+      <Filter>FileTree</Filter>
+    </ClInclude>
+    <ClInclude Include="CommStruct.h">
+      <Filter>FileTree</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

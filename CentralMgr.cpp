@@ -6,6 +6,7 @@ CentralMgr::CentralMgr(int &argc, char **argv)
 	:QSingleApplication(argc,argv)
 	,network_mgr_(this)
 	,ui_mgr_(this)
+	,data_mgr_(this)
 {
 }
 
@@ -23,29 +24,32 @@ bool CentralMgr::init()
 		return false;
 	}
 
-	initUI();
-	
-	initNetwork();
-
-	initThreadTask();
-	
+	initUIMgr();
+	initNetworkMgr();
+	initThreadTaskMgr();
+	initAppDataMgr();
 	onAfterInit();
 	return true;
 }
 
-void CentralMgr::initUI()
+void CentralMgr::initUIMgr()
 {
 	ui_mgr_.init();
 
 	setActiveWindow(ui_mgr_.getMainWindow());
 }
 
-void CentralMgr::initNetwork()
+void CentralMgr::initNetworkMgr()
 {
 
 }
 
-void CentralMgr::initThreadTask()
+void CentralMgr::initThreadTaskMgr()
+{
+
+}
+
+void CentralMgr::initAppDataMgr()
 {
 
 }
