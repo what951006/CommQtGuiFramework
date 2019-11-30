@@ -6,10 +6,6 @@
       <Extensions>qrc;*</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
       <Extensions>qrc;*</Extensions>
@@ -28,6 +24,10 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
       <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="FileTree\Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,22 +52,19 @@
     <ClCompile Include="ThreadTaskMgr.cpp">
       <Filter>FileTree</Filter>
     </ClCompile>
-    <ClCompile Include="CommDockWidget.cpp">
+    <ClCompile Include="EnvironmentMgr.cpp">
       <Filter>FileTree</Filter>
     </ClCompile>
-    <ClCompile Include="DSConvertMgr.cpp">
+    <ClCompile Include="DataMgr.cpp">
       <Filter>FileTree</Filter>
     </ClCompile>
-    <ClCompile Include="AppDataMgr.cpp">
+    <ClCompile Include="DataConvertMgr.cpp">
       <Filter>FileTree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MainWindow.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="CommDockWidget.ui">
-      <Filter>Form Files</Filter>
+      <Filter>FileTree\Form Files</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
@@ -94,21 +91,21 @@
     <QtMoc Include="ThreadTaskMgr.h">
       <Filter>FileTree</Filter>
     </QtMoc>
-    <QtMoc Include="CommDockWidget.h">
-      <Filter>FileTree</Filter>
-    </QtMoc>
-    <QtMoc Include="AppDataMgr.h">
+    <QtMoc Include="DataMgr.h">
       <Filter>FileTree</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DSConvertMgr.h">
-      <Filter>FileTree</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneralDef.h">
-      <Filter>FileTree</Filter>
-    </ClInclude>
     <ClInclude Include="CommStruct.h">
+      <Filter>FileTree</Filter>
+    </ClInclude>
+    <ClInclude Include="CommDefine.h">
+      <Filter>FileTree</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentMgr.h">
+      <Filter>FileTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DataConvertMgr.h">
       <Filter>FileTree</Filter>
     </ClInclude>
   </ItemGroup>

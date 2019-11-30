@@ -2,7 +2,7 @@
 #include "QSingleApplication.h"
 #include "NetworkMgr.h"
 #include "UIMgr.h"
-#include "AppDataMgr.h"
+#include "DataMgr.h"
 
 class CentralMgr : public QSingleApplication
 {
@@ -28,6 +28,6 @@ private:
 
 	NetworkMgr network_mgr_;
 	UIMgr ui_mgr_;
-	AppDataMgr data_mgr_;
+	DataMgr data_mgr_;
 };
 

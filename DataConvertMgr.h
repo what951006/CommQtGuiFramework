@@ -5,13 +5,12 @@
 /* @brief:数据结构转换类        
 /************************************************************************/
 
-class DSConvertMgr : public QObject
+class DataConvertMgr
 {
 
 public:
-	CommST::TestStruct toTestStruct(const QByteArray & data);
-protected:
-	DSConvertMgr(QObject *);
-	~DSConvertMgr();
+	DataConvertMgr();
+	~DataConvertMgr();
+
 };
 
